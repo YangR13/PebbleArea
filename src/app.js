@@ -3,7 +3,7 @@ var ajax = require('ajax');
 
 // Create a Card with title and subtitle
 var loadCard = new UI.Card({
-  title:'Area',
+  title:'PebbleArea',
   subtitle:'Loading...'
 });
 
@@ -12,7 +12,7 @@ loadCard.show();
 // Construct URL
 var lat;
 var lng;
-var radius = 400;
+var radius = 500;
 
 function locationSuccess(pos) {
   console.log('lat= ' + pos.coords.latitude + ' lon= ' + pos.coords.longitude);
@@ -70,8 +70,7 @@ var postlifeMenu;
 var religionMenu;
 var educationMenu;
 
-function formatMenuData() {
-  // MAIN MENU
+function formatMenuData() { 
   var mainItems = [];
 
   var catalogItems = [];
@@ -99,7 +98,7 @@ function formatMenuData() {
   }
   mainMenu = new UI.Menu({
     sections: [{
-      title: 'Main Menu',
+      title: 'PebbleArea',
       items: mainItems
     }]
   });
