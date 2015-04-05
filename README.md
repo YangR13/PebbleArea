@@ -1,2 +1,2 @@
 # PebbleArea
-Location information for Pebble
+Proximity information for Pebble
